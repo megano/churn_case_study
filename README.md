@@ -1,5 +1,15 @@
 # Case Study - Churn Prediction
 
+# How to Navigate This Repo
+Scroll down in this README file to read about the problem, data set and our findings. See src and model folders for code used to build the model. See churn-deck for the deck we presented. 
+
+Our verbal presentation and deck answered:
+  * How we computed the target
+  * Model did we chose and why
+  * Alternative models we considered and why they wouldn't work
+  * Performance metric we used and why
+  * Based on insights from the model, actionable plans we propose to reduce churn
+
 # Problem
 Ride-sharing Company X is interested in predicting rider retention. What factors are best predictors for retention? Offer suggestions to operationalize those insights. Build a model that minimizes error and you can interpret factors that contributed to your predictions.
 
@@ -21,9 +31,9 @@ Data Description:
   * luxury_car_user: TRUE if the user took a luxury car in their first 30 days; FALSE otherwise
   * weekday_pct: the percent of the user’s trips occurring during a weekday
 
-# Data Analysis Work Flow
+# Data Analysis
 
-Analysis Process:
+Process Followed:
   * Exploratory analysis, cleaning, visualizations.
   * Build a predictive model to determine whether or not a user will be retained.
   * Evaluate the model
@@ -31,11 +41,5 @@ Analysis Process:
   * Discuss the validity of our model and issues such as leakage
   * Repeat 2 - 5 until we have a satisfactory model
 
-Deliverables
-Code used to build the model
-Verbal presentation including:
-  * How did you compute the target?
-  * What model did you use in the end? Why?
-  * Alternative models you considered? Why are they not good enough?
-  * What performance metric did you use? Why?
-  * Based on insights from the model, what actionable plans do you propose to reduce churn?
+Findings:
+![Feature Importance List](https://github.com/megano/churn_case_study/blob/master/img/feature-importance.png "Feature Importance")
