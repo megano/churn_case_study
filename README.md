@@ -1,6 +1,6 @@
 # Case Study - Churn Prediction
 
-# How to Navigate This Repo
+## How to Navigate This Repo
 Scroll down in this README file to read about the problem, data set and our findings. See src and model folders for code used to build the model. See churn-deck for the deck we presented. 
 
 Our verbal presentation and deck answered:
@@ -10,10 +10,10 @@ Our verbal presentation and deck answered:
   * Performance metric we used and why
   * Based on insights from the model, actionable plans we propose to reduce churn
 
-# Problem
+## Problem
 Ride-sharing Company X is interested in predicting rider retention. What factors are best predictors for retention? Offer suggestions to operationalize those insights. Build a model that minimizes error and you can interpret factors that contributed to your predictions.
 
-# Data
+## Data
 A sample of users who signed up in January 2014 pulled on July 1, 2014. We consider a user retained if they were “active” (i.e. took a trip) in the preceding 30 days (from the day the data was pulled). Latest day of last_trip_date is when the data was pulled.
 
 Data Description:
@@ -43,11 +43,15 @@ The process we followed was:
 
 Findings:
 Our best model was a Random Forest on polynomial data of degree 2. In absence of cost information or loss functions we chose the metrics accuracy, precision and recall. Our result was accuracy 0.77, precision 0.72 and recall 0.64. 
+
+
 ![ROC Curve](https://github.com/megano/churn_case_study/blob/master/img/roc-curve.png "Result")
+
+
 Possible alternatives we considered were Logistic Regression, Adaboost, and KNN. 
 
 Important features are:
-![Feature Importance List1](https://github.com/megano/churn_case_study/blob/master/img/feature-importance1.png "Feature Importance")
+
 ![Feature Importance List](https://github.com/megano/churn_case_study/blob/master/img/feature-importance.png "Feature Importance")
 
 Our actionable recommendations are:
@@ -68,9 +72,9 @@ Our actionable recommendations are:
 Visualizations we generated:
 ![Various Plots](https://github.com/megano/churn_case_study/blob/master/img/more-plots.png "Visually Check the Data")
 ![Metrics by City](https://github.com/megano/churn_case_study/blob/master/img/metrics_by_city.jpg "Metrics by City")
+![Feature Importance List1](https://github.com/megano/churn_case_study/blob/master/img/feature-importance1.png "Feature Importance")
 
-
-# Future Analysis
+## Future Analysis
 Data we’d like to analyze:
   * number of declined rides
   * individual trip data per user including each ride’s cost
