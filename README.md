@@ -1,10 +1,12 @@
-# churn_case_study
-Case Study - Churn Prediction
-A ride-sharing company (Company X) is interested in predicting rider retention. To help explore this question, we have provided a sample dataset of a cohort of users who signed up for an account in January 2014. The data was pulled on July 1, 2014; we consider a user retained if they were “active” (i.e. took a trip) in the preceding 30 days (from the day the data was pulled). Assume the latest day of last_trip_date to be when the data was pulled. The data is churn.csv in the data folder.
+# Case Study - Churn Prediction
 
-We would like you to use this data set to help understand what factors are the best predictors for retention, and offer suggestions to operationalize those insights to help Company X. Therefore, your task is not only to build a model that minimizes error, but also a model that allows you to interpret the factors that contributed to your predictions.
+# Problem
+Ride-sharing Company X is interested in predicting rider retention. What factors are best predictors for retention? Offer suggestions to operationalize those insights. Build a model that minimizes error and you can interpret factors that contributed to your predictions.
 
-Here is a detailed description of the data:
+# Data
+A sample of users who signed up in January 2014 pulled on July 1, 2014. We consider a user retained if they were “active” (i.e. took a trip) in the preceding 30 days (from the day the data was pulled). Latest day of last_trip_date is when the data was pulled.
+
+Data Description:
 
 city: city this user signed up in
 phone: primary device for this user
@@ -18,23 +20,20 @@ avg_surge: The average surge multiplier over all of this user’s trips
 trips_in_first_30_days: the number of trips this user took in the first 30 days after signing up
 luxury_car_user: TRUE if the user took a luxury car in their first 30 days; FALSE otherwise
 weekday_pct: the percent of the user’s trips occurring during a weekday
-Work Flow
-Perform any cleaning, exploratory analysis, and/or visualizations to use the provided data for this analysis.
 
-Build a predictive model to help determine whether or not a user will be retained.
+# Data Analysis Work Flow
 
+Analysis Process:
+Exploratory analysis, cleaning, visualizations.
+Build a predictive model to determine whether or not a user will be retained.
 Evaluate the model
-
-Identify / interpret features that are the most influential in affecting your predictions
-
-Discuss the validity of your model. Issues such as leakage
-
-Repeat 2 - 5 until you have a satisfactory model
+Identify / interpret features that are the most influential in affecting our predictions
+Discuss the validity of our model and issues such as leakage
+Repeat 2 - 5 until we have a satisfactory model
 
 Deliverables
-Code you used to build the model (submit via pull request)
-
-A (verbal) presentation including the following points:
+Code used to build the model
+Verbal presentation including:
 
 How did you compute the target?
 What model did you use in the end? Why?
