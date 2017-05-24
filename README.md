@@ -33,7 +33,7 @@ Data Description:
 
 # Data Analysis
 
-Process Followed:
+The process we followed was:
   * Exploratory analysis, cleaning, visualizations.
   * Build a predictive model to determine whether or not a user will be retained.
   * Evaluate the model
@@ -42,4 +42,38 @@ Process Followed:
   * Repeat 2 - 5 until we have a satisfactory model
 
 Findings:
+Our best model was a Random Forest on polynomial data of degree 2. In absence of cost information or loss functions we chose the metrics accuracy, precision and recall. Our result was accuracy 0.77, precision 0.72 and recall 0.64. 
+![ROC Curve](https://github.com/megano/churn_case_study/blob/master/img/roc-curve.png "Result")
+Possible alternatives we considered were Logistic Regression, Adaboost, and KNN. 
+
+Important features are:
+![Feature Importance List1](https://github.com/megano/churn_case_study/blob/master/img/feature-importance1.png "Feature Importance")
 ![Feature Importance List](https://github.com/megano/churn_case_study/blob/master/img/feature-importance.png "Feature Importance")
+
+Our actionable recommendations are:
+  * Surge % has a bigger impact than # times surged  
+  - Try fewer but higher surges
+  * iPhone churn less 
+  - Try improving android app experience
+  * People who take a luxury car churn less 
+  - Try promos for luxury car rides
+  * People who ride more in 30 days churn less 
+  - Try promos, ads for 1st 30 days
+  * Avg rating BY > OF driver. 
+  We'd need more info. Below are some initial recommendations. Maybe a rider w/ low score is assigned worse drivers?  
+  - Match riders scored low w/drivers w/high scores 
+  - Pre-drop off hide passenger ratings from drivers
+  - Hide aggregate passenger rating from users, only show most recent ride score
+
+Visualizations we generated:
+![Various Plots](https://github.com/megano/churn_case_study/blob/master/img/more-plots.png "Visually Check the Data")
+![Metrics by City](https://github.com/megano/churn_case_study/blob/master/img/metrics_by_city.jpg "Metrics by City")
+
+
+# Future Analysis
+Data we’d like to analyze:
+  * number of declined rides
+  * individual trip data per user including each ride’s cost
+  * all rider’s data for multiple yrs (currently have 6 months of aggregate data from Jan sign ups)
+  * a list of changes (with dates) for rider and passenger interfaces
+  * additional biz info for ex: cost benefit tradeoffs, profit curves
