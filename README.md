@@ -55,19 +55,11 @@ Important features are:
 ![Feature Importance List](https://github.com/megano/churn_case_study/blob/master/img/feature-importance.png "Feature Importance")
 
 Our actionable recommendations are:
-  * Surge % has a bigger impact than # times surged  
-  - Try fewer but higher surges
-  * iPhone churn less 
-  - Try improving android app experience
-  * People who take a luxury car churn less 
-  - Try promos for luxury car rides
-  * People who ride more in 30 days churn less 
-  - Try promos, ads for 1st 30 days
-  * Avg rating BY > OF driver. 
-  We'd need more info. Below are some initial recommendations. Maybe a rider w/ low score is assigned worse drivers?  
-  - Match riders scored low w/drivers w/high scores 
-  - Pre-drop off hide passenger ratings from drivers
-  - Hide aggregate passenger rating from users, only show most recent ride score
+  * Surge % has a bigger impact than # times surged -> Try fewer but higher surges
+  * iPhone churn less -> Try improving android app experience
+  * People who take a luxury car churn less -> Try promos for luxury car rides
+  * People who ride more in 30 days churn less -> Try promos, ads for 1st 30 days
+  * Avg rating BY > OF driver. -> Match riders scored low w/drivers w/high scores, pre-drop off hide passenger ratings from drivers, hide aggregate passenger rating from users, only show most recent ride score. 
 
 Visualizations we generated:
 ![Various Plots](https://github.com/megano/churn_case_study/blob/master/img/more-plots.png "Visually Check the Data")
@@ -76,8 +68,9 @@ Visualizations we generated:
 
 ## Future Analysis
 Data we’d like to analyze:
-  * number of declined rides
-  * individual trip data per user including each ride’s cost
-  * all rider’s data for multiple yrs (currently have 6 months of aggregate data from Jan sign ups)
-  * a list of changes (with dates) for rider and passenger interfaces
-  * additional biz info for ex: cost benefit tradeoffs, profit curves
+  * Number of declined rides
+  * Individual trip data per user including each ride’s cost
+  * All rider’s data for multiple yrs (currently have 6 months of aggregate data from Jan sign ups)
+  * A list of changes (with dates) for rider and passenger interfaces
+  * Additional biz info for ex: cost benefit tradeoffs, profit curves
+  * More info on ratings. Maybe a rider w/ low score is assigned worse drivers?  
